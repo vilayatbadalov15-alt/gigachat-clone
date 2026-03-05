@@ -125,11 +125,6 @@ function App() {
     }
   };
 
-  const renameChat = (chatId: string, newName: string) => {
-    setChats(prev => prev.map(chat =>
-      chat.id === chatId ? { ...chat, name: newName } : chat
-    ));
-  };
 
   return (
     <>
