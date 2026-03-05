@@ -18,7 +18,6 @@ interface SidebarProps {
   onSelectChat: (chatId: string) => void;
   onNewChat: () => void;
   onDeleteChat: (chatId: string) => void;
-  onRenameChat: (chatId: string, newName: string) => void;
 }
 
 function Sidebar({
@@ -27,7 +26,6 @@ function Sidebar({
   onSelectChat,
   onNewChat,
   onDeleteChat,
-  onRenameChat
 }: SidebarProps) {
   return (
     <div className={styles.sidebar}>

@@ -41,16 +41,12 @@ function App() {
 
   const [currentChatId, setCurrentChatId] = useState<string>('1');
   const [isLoading, setIsLoading] = useState(false);
-  
-  // Реф для прокрутки
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Сохраняем чаты в localStorage
   useEffect(() => {
     localStorage.setItem('chats', JSON.stringify(chats));
   }, [chats]);
 
-  // Автопрокрутка к последнему сообщению
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [chats, currentChatId, isLoading]);
@@ -143,15 +139,15 @@ function App() {
         onSelectChat={setCurrentChatId}
         onNewChat={createNewChat}
         onDeleteChat={deleteChat}
-        onRenameChat={renameChat}
       />
       <div className="app">
+        <h1>GigaChat Clone</h1>
         <div className="messages">
           {currentChat?.messages.map((msg, index) => (
             <Message key={index} role={msg.role} text={msg.text} />
           ))}
           {isLoading && <TypingIndicator />}
-          <div ref={messagesEndRef} /> {/* невидимый элемент для прокрутки */}
+          <div ref={messagesEndRef} />
         </div>
         <InputField onSend={sendMessageToAPI} />
       </div>

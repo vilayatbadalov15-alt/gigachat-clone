@@ -1,4 +1,4 @@
-const API_KEY = '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';
+const API_KEY = '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';
 const BASE_URL = 'https://openrouter.ai/api/v1';
 
 export async function sendMessage(messages: { role: string; content: string }[]) {

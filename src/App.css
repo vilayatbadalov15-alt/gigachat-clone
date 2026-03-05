@@ -13,8 +13,17 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin-left: 260px; /* отступ под сайдбар */
+  margin-left: 260px;
+  width: calc(100% - 260px);
   background-color: white;
+}
+
+.app h1 {
+  padding: 20px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
 }
 
 .messages {
