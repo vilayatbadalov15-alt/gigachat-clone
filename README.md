@@ -31,12 +31,10 @@
    cd gigachat-clone
 
 2. Установите зависимости:
-
 ```bash
 npm install
 
 3. Запустите проект:
-
 ```bash
 npm run dev
 
