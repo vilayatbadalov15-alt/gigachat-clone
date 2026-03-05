@@ -26,29 +26,36 @@
 ## Установка и запуск
 
 1. Клонируйте репозиторий:
+   ​```​
    git clone https://github.com/vilayatbadalov15-alt/gigachat-clone.git
    cd gigachat-clone
+   ​```
 
-2. Установите зависимости:
+3. Установите зависимости:
+ ​```
    npm install
+ ​```
 
-3. Запустите проект:
+5. Запустите проект:
+ ​```
    npm run dev
+ ​```
 
-4. Откройте http://localhost:5173
+7. Откройте http://localhost:5173
 
 ## Скриншоты
 Общий вид чата
-https://1-main.png
+[https://1-main.png](https://github.com/vilayatbadalov15-alt/gigachat-clone/blob/main/1-main.png)
 
 Markdown и подсветка кода
-https://2-markdown.png
+[https://2-markdown.png](https://github.com/vilayatbadalov15-alt/gigachat-clone/blob/main/2-markdown.png)
 
 Индикатор печати
-https://3-typing.png
+[https://3-typing.png](https://github.com/vilayatbadalov15-alt/gigachat-clone/blob/main/3-typing.png)
 
 Управление чатами
-https://4-chats.png
+[https://4-chats.png](https://github.com/vilayatbadalov15-alt/gigachat-clone/blob/main/4-chats.png)
 
-Автор
+
+## Автор
 Бадалов Вилаят Маисович
