@@ -30,10 +30,10 @@
    cd gigachat-clone
 
 2. Установите зависимости:
-npm install
+   npm install
 
 3. Запустите проект:
-npm run dev
+   npm run dev
 
 4. Откройте http://localhost:5173
 
